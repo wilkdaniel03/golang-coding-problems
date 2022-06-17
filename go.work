@@ -3,6 +3,7 @@ go 1.18
 use (
 	./branch-sums
 	./closest-value-in-tree
+	./node-depth
 	./sorted-squared-array
 	./tournament-winner
 	./two-number-sum
