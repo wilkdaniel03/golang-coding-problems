@@ -1,6 +1,7 @@
 go 1.18
 
 use (
+	./branch-sums
 	./closest-value-in-tree
 	./sorted-squared-array
 	./tournament-winner
