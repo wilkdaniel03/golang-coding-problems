@@ -2,6 +2,7 @@ go 1.18
 
 use (
 	./sorted-squared-array
+	./tournament-winner
 	./two-number-sum
 	./validate-subsequence
 )
