@@ -1,6 +1,7 @@
 go 1.18
 
 use (
+	./sorted-squared-array
 	./two-number-sum
 	./validate-subsequence
 )
