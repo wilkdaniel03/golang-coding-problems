@@ -30,6 +30,17 @@ func (tree *BST) IterativeSolution() int {
   return depth
 }
 
+func (tree *BST) RecursiveSolution() int {
+  return recursiveSolution(tree, 0)
+}
+
+func recursiveSolution(node *BST, depth int) int {
+  if node == nil {
+    return 0
+  }
+  return depth + recursiveSolution(node.Left, depth+1) + recursiveSolution(node.Right, depth+1)
+}
+
 func main() {
   tree := BST{Value: 10, Left: nil, Right: nil}
   midTreeOne := BST{Value: 5, Left: nil, Right: nil}
@@ -45,4 +56,5 @@ func main() {
   midTreeTwo.Left = &bottomTreeThree
   midTreeTwo.Right = &bottomTreeFour
   fmt.Printf("Iterative => %d\n", tree.IterativeSolution())
+  fmt.Printf("Recursive => %d\n", tree.RecursiveSolution())
 }
