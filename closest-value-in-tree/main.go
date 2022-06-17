@@ -29,6 +29,22 @@ func (tree *BST) iterativeSolution(target, closest int) int {
   return closest
 }
 
+func (tree *BST) RecursiveSolution(target int) int {
+  return tree.recursiveSolution(target, tree.Value)
+}
+
+func (tree *BST) recursiveSolution(target, closest int) int {
+  if abs(target - closest) > abs(target - tree.Value) {
+    closest = tree.Value
+  }
+  if target < tree.Value && tree.Left != nil {
+    return tree.Left.recursiveSolution(target, closest)
+  } else if target > tree.Value && tree.Right != nil {
+    return tree.Right.recursiveSolution(target, closest)
+  }
+  return closest
+}
+
 func abs(a int) int {
   if a < 0 {
     return -a
@@ -50,5 +66,6 @@ func main() {
   midTreeOne.Right = &bottomTreeTwo
   midTreeTwo.Left = &bottomTreeThree
   midTreeTwo.Right = &bottomTreeFour
-  fmt.Printf("Iterative solution => %d", tree.IterativeSolution(12))
+  fmt.Printf("Iterative solution => %d\n", tree.IterativeSolution(12))
+  fmt.Printf("Recursive solution => %d\n", tree.RecursiveSolution(12))
 }
