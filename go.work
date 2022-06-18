@@ -4,6 +4,7 @@ use (
 	./branch-sums
 	./closest-value-in-tree
 	./depth-first-search
+	./minimum-waiting-time
 	./node-depth
 	./sorted-squared-array
 	./tournament-winner
