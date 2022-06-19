@@ -24,7 +24,20 @@ func findFib(n int, cache map[int]int) int {
   return findFib(n-1, cache) + findFib(n-2, cache)
 }
 
+func IterativeSolution(n int) int {
+  currentFib := [2]int{0,1}
+  for i := 3; i <= n; i++ {
+    nextFib := currentFib[0] + currentFib[1]
+    currentFib = [2]int{currentFib[1], nextFib}
+  }
+  if n == 0 {
+    return currentFib[0]
+  }
+  return currentFib[1]
+}
+
 func main() {
 	fmt.Printf("Factorial Result => %d\n", FactorialSolution(20))
 	fmt.Printf("Cached Result => %d\n", CachedSolution(20))
+	fmt.Printf("Iterative Result => %d\n", IterativeSolution(20))
 }
