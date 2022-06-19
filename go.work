@@ -4,6 +4,7 @@ use (
 	./binary-search
 	./branch-sums
 	./bubble-sort
+	./caesar-cipher-encryptor
 	./class-photos
 	./closest-value-in-tree
 	./depth-first-search
