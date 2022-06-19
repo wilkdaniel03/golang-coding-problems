@@ -10,6 +10,15 @@ func WorstSolution(str string) bool {
   return str == reversedString
 }
 
+func AverageIterativeSolution(str string) bool {
+  charArray := []byte{}
+  for i := len(str)-1; i >= 0; i-- {
+    charArray = append(charArray, str[i])
+  }
+  return str == string(charArray)
+}
+
 func main() {
   fmt.Printf("First result => %v\n", WorstSolution("abcdcba"))
+  fmt.Printf("Second result => %v\n", AverageIterativeSolution("abcdcba"))
 }
