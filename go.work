@@ -13,6 +13,7 @@ use (
 	./remove-duplicates-from-linked-list
 	./sorted-squared-array
 	./tandem-bicycle
+	./three-largest-numbers
 	./tournament-winner
 	./two-number-sum
 	./validate-subsequence
