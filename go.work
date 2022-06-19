@@ -15,6 +15,7 @@ use (
 	./palindrome
 	./product-sum
 	./remove-duplicates-from-linked-list
+	./run-length-encoding
 	./selection-sort
 	./sorted-squared-array
 	./tandem-bicycle
