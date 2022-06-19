@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func WithUnicodesSolution(str string, key int) string {
   shift, offset := rune(key%26), rune(26)
@@ -16,6 +19,21 @@ func WithUnicodesSolution(str string, key int) string {
   return string(runes)
 }
 
+func WithoutUnicodesSolution(str string, key int) string {
+  runes := []rune(str)
+  alphabet := "abcdefghijklmnopqrstuvwxyz"
+  for i, char := range(runes) {
+    index := strings.Index(alphabet, string(char))
+    if index == -1 {
+      return ""
+    }
+    newIndex := (index+key) % 26
+    runes[i] = rune(alphabet[newIndex])
+  }
+  return string(runes)
+}
+
 func main() {
   fmt.Printf("First result => %s\n", WithUnicodesSolution("xyz", 2))
+  fmt.Printf("Second result => %s\n", WithoutUnicodesSolution("xyz", 2))
 }
