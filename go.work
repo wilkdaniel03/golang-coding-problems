@@ -1,6 +1,7 @@
 go 1.18
 
 use (
+	./binary-search
 	./branch-sums
 	./class-photos
 	./closest-value-in-tree
