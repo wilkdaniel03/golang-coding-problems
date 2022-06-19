@@ -12,6 +12,7 @@ use (
 	./insertion-sort
 	./minimum-waiting-time
 	./node-depth
+	./non-repeating-character
 	./nth-fibonacci
 	./palindrome
 	./product-sum
