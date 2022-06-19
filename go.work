@@ -3,6 +3,7 @@ go 1.18
 use (
 	./binary-search
 	./branch-sums
+	./bubble-sort
 	./class-photos
 	./closest-value-in-tree
 	./depth-first-search
