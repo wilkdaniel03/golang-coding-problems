@@ -13,6 +13,7 @@ use (
 	./nth-fibonacci
 	./product-sum
 	./remove-duplicates-from-linked-list
+	./selection-sort
 	./sorted-squared-array
 	./tandem-bicycle
 	./three-largest-numbers
