@@ -8,6 +8,7 @@ use (
 	./class-photos
 	./closest-value-in-tree
 	./depth-first-search
+	./generate-document
 	./insertion-sort
 	./minimum-waiting-time
 	./node-depth
