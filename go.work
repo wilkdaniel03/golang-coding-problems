@@ -8,6 +8,7 @@ use (
 	./minimum-waiting-time
 	./node-depth
 	./nth-fibonacci
+	./product-sum
 	./remove-duplicates-from-linked-list
 	./sorted-squared-array
 	./tandem-bicycle
