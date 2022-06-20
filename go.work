@@ -11,6 +11,7 @@ use (
 	./generate-document
 	./insertion-sort
 	./minimum-waiting-time
+	./move-element-to-left
 	./node-depth
 	./non-repeating-character
 	./nth-fibonacci
