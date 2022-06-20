@@ -22,6 +22,7 @@ use (
 	./sorted-squared-array
 	./tandem-bicycle
 	./three-largest-numbers
+	./three-number-sum
 	./tournament-winner
 	./two-number-sum
 	./validate-subsequence
