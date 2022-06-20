@@ -19,6 +19,7 @@ use (
 	./remove-duplicates-from-linked-list
 	./run-length-encoding
 	./selection-sort
+	./smallest-difference
 	./sorted-squared-array
 	./tandem-bicycle
 	./three-largest-numbers
