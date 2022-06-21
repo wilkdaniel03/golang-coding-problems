@@ -23,6 +23,7 @@ use (
 	./selection-sort
 	./smallest-difference
 	./sorted-squared-array
+	./spiral-traverse
 	./tandem-bicycle
 	./three-largest-numbers
 	./three-number-sum
